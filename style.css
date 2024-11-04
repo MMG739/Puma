@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.logo1{
+    width: 130px;
+    height: 75px;
+    position: relative;
+    bottom: 25px;
+    background-color: orange;
+}
+.menu{
+    display: flex;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu ul li{
+    border-right: 1px solid black;
+    padding: 15px;
+}
+.icone{
+    display: flex;
+    align-items: center;
+}
+.icone i{
+    padding: 15px;
+    border-right: 1px solid black;
+}
+.burger-menu{
+    display: none;
+}
+.carrousel{
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo2 img{
+    width: 75px;
+    height: 75px;
+    border-bottom: 2px solid orange;
+}
+
+.title{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.title h1{
+    font-size: 50px;
+    color: white;
+}
+.title p{
+    font-size: 13px;
+    color: whitesmoke;
+}
+.btn{
+    padding: 10px 20px;
+    color: white;
+    border: solid;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: orange;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;  
+    position: relative;
+    bottom: 50px;
+}
+.card1{
+    width: 35%;
+    height: 250px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card2{
+    width: 35%;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bord1{
+    width: 80%;
+    height: 70%;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+.bord2{
+    position: relative;
+    left: 30%;
+    width: 70%;
+    border-top: 1px solid white;
+}
+.bord3{
+    position: relative;
+    height: 40%;
+    border-left: 1px solid white;
+    top: 60%;
+}
+.bord4{
+    position: relative;
+    left: 45%;
+    width: 55%;
+    border-top: 1px solid white;
+}
+.card-title{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 45%;
+}
+.link1{
+    width: 80%;
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding-top: 15px;
+    
+    
+}
+
+@media (max-width: 750px) {
+    nav .menu ul{
+        display: none;
+    }  
+    .burger-menu{
+        display: block;
+    }
+    .burger-menu i{
+        padding: 15px;
+    } 
+    .icone i{
+        border: none;
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .card1{
+        width: 350px;
+    }
+    .card2{
+        width: 350px;
+    }
+
+}
